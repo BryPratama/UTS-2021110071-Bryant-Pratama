@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="vehicles.VehiclesMenuController">
+    <!-- Menubar di bagian atas -->
+    <top>
+        <MenuBar>
+            <Menu text="Kendaraan">
+                <MenuItem text="Kendaraan" onAction="#showVehicles"/>
+            </Menu>
+            <Menu text="Penjualan">
+                <MenuItem text="Penjualan" onAction="#showSales"/>
+            </Menu>
+            <Menu text="Pelanggan">
+                <MenuItem text="Pelanggan" onAction="#showCustomer"/>
+            </Menu>
+            <Menu text="Pembayaran">
+                <MenuItem text="Pembayaran" onAction="#showPayment"/>
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <!-- Area konten utama -->
+    <center>
+        <AnchorPane fx:id="contentArea" prefHeight="400.0" prefWidth="600.0"/>
+    </center>
+</BorderPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8"
+            fx:controller="vehicles.VehiclesController">
+
+    <!-- Label untuk Judul -->
+    <Label layoutX="220" layoutY="20" text="Data Kendaraan" />
+
+    <!-- Input untuk Vehicle ID -->
+    <Label layoutX="50" layoutY="60" text="Vehicle ID" />
+    <TextField fx:id="vehicleIDField" layoutX="150" layoutY="60" promptText="Masukkan Vehicle ID" />
+
+    <!-- Input untuk Merk -->
+    <Label layoutX="50" layoutY="100" text="Merk" />
+    <TextField fx:id="merkField" layoutX="150" layoutY="100" promptText="Masukkan Merk" />
+
+    <!-- Input untuk Model -->
+    <Label layoutX="50" layoutY="140" text="Model" />
+    <TextField fx:id="modelField" layoutX="150" layoutY="140" promptText="Masukkan Model" />
+
+    <!-- Input untuk Tahun Produksi -->
+    <Label layoutX="50" layoutY="180" text="Tahun Produksi" />
+    <TextField fx:id="tahunProduksiField" layoutX="150" layoutY="180" promptText="Masukkan Tahun Produksi" />
+
+    <!-- Input untuk Harga -->
+    <Label layoutX="50" layoutY="220" text="Harga" />
+    <TextField fx:id="hargaField" layoutX="150" layoutY="220" promptText="Masukkan Harga" />
+
+    <!-- Tombol untuk Menambah Kendaraan -->
+    <Button fx:id="btnTambahKendaraan" layoutX="50" layoutY="270" text="Tambah Kendaraan" onAction="#tambahKendaraan" />
+
+    <!-- Tombol untuk Menampilkan Data -->
+    <Button fx:id="btnTampilDataKendaraan" layoutX="200" layoutY="270" text="Tampilkan Data" onAction="#tampilDataKendaraan" />
+
+    <!-- Tombol untuk Menghapus Kendaraan -->
+    <Button fx:id="btnHapusDataKendaraan" layoutX="350" layoutY="270" text="Hapus Kendaraan" onAction="#hapusKendaraan" />
+
+    <!-- ListView untuk Menampilkan Data Kendaraan -->
+    <ListView fx:id="listViewKendaraan" layoutX="50" layoutY="320" prefHeight="200" prefWidth="400" />
+</AnchorPane>
